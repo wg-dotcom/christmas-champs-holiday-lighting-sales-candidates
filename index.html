@@ -1,0 +1,843 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Holiday Lighting Sales Specialist · Live Hiring Event</title>
+  <meta name="robots" content="noindex,nofollow" />
+  <link rel="icon" type="image/png" href="https://saganrecruitment.com/wp-content/uploads/2025/10/Sagan-Logo-2-e1759568299542.png" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Fragment+Mono&display=swap" rel="stylesheet" />
+  <style>
+    :root{
+      --glacier:#093A3E; --glacier-dark:#06282B; --glacier-muted:#4A6B6B;
+      --cream:#F5F2ED; --cream-deep:#EDE9E5; --dandelion:#F5B800; --sagan-blue:#2197FF;
+      --hairline:rgba(9,58,62,0.06); --hairline-strong:rgba(9,58,62,0.10);
+    }
+    body{background:var(--cream);color:var(--glacier);font-family:'Space Grotesk',sans-serif;}
+    .display{font-family:'Plus Jakarta Sans',sans-serif;letter-spacing:-0.035em;line-height:1.05;font-weight:800;}
+    .ticker{font-family:'Fragment Mono',monospace;font-variant-numeric:tabular-nums;}
+    .eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:0.2em;color:var(--glacier-muted);}
+    .card{background:#fff;border:1px solid var(--hairline);border-radius:24px;}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:9999px;font-weight:600;font-size:15px;transition:all 220ms cubic-bezier(.2,.7,.2,1);cursor:pointer;}
+    .btn-primary{background:var(--glacier);color:var(--cream);}
+    .btn-primary:hover{background:var(--glacier-dark);transform:translateY(-2px);}
+    .btn-ghost{background:transparent;color:var(--glacier);border:1px solid var(--glacier);}
+    .btn-ghost:hover{background:var(--glacier);color:var(--cream);}
+    .btn-accent{background:var(--dandelion);color:var(--glacier);}
+    .btn-accent:hover{transform:translateY(-2px);}
+    .reveal{opacity:0;transform:translateY(18px);transition:all 800ms cubic-bezier(.2,.7,.2,1);}
+    .reveal.in{opacity:1;transform:none;}
+    .pill{display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:9999px;border:1px solid var(--hairline-strong);font-size:13px;color:var(--glacier-muted);background:var(--cream);}
+    .livedot{width:8px;height:8px;border-radius:9999px;background:var(--sagan-blue);display:inline-block;animation:pulse 2s ease-in-out infinite;}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+    /* Unfilled template tokens glow so nobody ships a half-built page */
+    .tok{background:var(--dandelion);color:var(--glacier);padding:0 5px;border-radius:4px;font-family:'Fragment Mono',monospace;font-size:0.88em;}
+    @media (prefers-reduced-motion:reduce){ .reveal{opacity:1;transform:none;transition:none;} .livedot{animation:none;} }
+    .video-slot{margin-top:20px;}
+    article.removed{opacity:.42;}
+    article.removed .removable{display:none;}
+
+    .video-frame{position:relative;width:100%;padding-top:56.25%;border-radius:18px;overflow:hidden;background:#000;border:1px solid var(--hairline-strong);}
+    .video-frame > iframe,.video-frame > video{position:absolute;inset:0;width:100%;height:100%;border:0;}
+    @media print{
+      .no-print{display:none!important;}
+      body{background:#fff;}
+      .card{break-inside:avoid;border:1px solid #ccc;}
+      .reveal{opacity:1!important;transform:none!important;}
+    }
+  </style>
+</head>
+<body>
+<header class="sticky top-0 z-50 backdrop-blur no-print" style="background:rgba(245,242,237,0.9);border-bottom:1px solid var(--hairline);">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
+    <a href="/" class="flex items-center gap-2">
+      <span class="display text-lg">Sagan</span>
+      <span class="eyebrow">· TALENT SELECTION</span>
+    </a>
+    <div class="flex items-center gap-3">
+      <span class="eyebrow hidden md:inline" id="stage-count">9 ON STAGE</span>
+      <span class="eyebrow hidden lg:inline" id="clock-status">·</span>
+      <button onclick="window.print()" class="btn btn-ghost" style="padding:9px 18px;font-size:14px;">Print</button>
+    </div>
+  </div>
+</header>
+
+<section class="max-w-6xl mx-auto px-6 py-16 md:py-24">
+  <div class="eyebrow reveal mb-8"><span class="livedot"></span> LIVE HIRING EVENT · FRIDAY, AUGUST 28</div>
+  <h1 class="display text-5xl md:text-7xl reveal mb-6" style="max-width:18ch;">
+    Meet the room <span style="color:var(--dandelion);">before you're in it.</span>
+  </h1>
+  <p class="reveal text-xl mb-10" style="color:var(--glacier-muted);max-width:66ch;">
+    Kesler, these are the nine people joining your Holiday Lighting Sales Specialist event.
+    They come on stage in the order below, four minutes each. Read this beforehand and you'll
+    spend the carousel confirming a shortlist instead of building one from scratch.
+  </p>
+
+  <div class="grid sm:grid-cols-4 gap-4 mb-4">
+    <div class="card reveal p-7">
+      <div class="ticker text-4xl mb-2" style="color:var(--dandelion);">9</div>
+      <div class="eyebrow">ON STAGE</div>
+    </div>
+    <div class="card reveal p-7">
+      <div class="ticker text-4xl mb-2" style="color:var(--dandelion);">3</div>
+      <div class="eyebrow">YOU INTERVIEW PRIVATELY</div>
+    </div>
+    <div class="card reveal p-7">
+      <div class="ticker text-4xl mb-2" style="color:var(--dandelion);">4</div>
+      <div class="eyebrow">HAVE SOLD TO HOMEOWNERS BEFORE</div>
+    </div>
+    <div class="card reveal p-7">
+      <div class="ticker text-4xl mb-2" style="color:var(--dandelion);">$2,500</div>
+      <div class="eyebrow">ALL NINE, SAME NUMBER</div>
+    </div>
+  </div>
+</section>
+
+<!-- THE READ -->
+<section class="max-w-6xl mx-auto px-6 pb-16">
+  <div class="card reveal p-8 md:p-14">
+    <div class="eyebrow mb-6">HOW THIS WORKS</div>
+    <h2 class="display text-3xl md:text-5xl mb-6" style="max-width:24ch;">This is the shortlist for your event.</h2>
+    <p class="text-lg mb-12" style="color:var(--glacier-muted);max-width:66ch;">
+      Kesler, have a look through and remove anyone you would rather not see on the day.
+      On the day you will meet everyone who is left in a live five-minute conversation, one at a
+      time, while they introduce themselves. After that you choose up to three people to
+      interview privately, in your own 40-minute room.
+    </p>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="ticker text-lg mb-2" style="color:var(--dandelion);">01</div>
+        <p class="font-semibold mb-1">Remove anyone you don't want</p>
+        <p style="color:var(--glacier-muted);">Watch the intro videos, then cut whoever you would rather not
+        spend time on. Do it before Thursday night so we can tell them early.</p>
+      </div>
+      <div>
+        <div class="ticker text-lg mb-2" style="color:var(--dandelion);">02</div>
+        <p class="font-semibold mb-1">Main stage, five minutes each</p>
+        <p style="color:var(--glacier-muted);">Everyone left comes on one at a time and introduces themselves,
+        live. Five minutes each. Ask them whatever you want.</p>
+      </div>
+      <div>
+        <div class="ticker text-lg mb-2" style="color:var(--dandelion);">03</div>
+        <p class="font-semibold mb-1">Pick up to three, privately</p>
+        <p style="color:var(--glacier-muted);">You get ten minutes to choose. Those three go into a private
+        40-minute interview with you, one after the other.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="max-w-6xl mx-auto px-6 pb-10">
+  <div class="eyebrow reveal mb-4">IN STAGE ORDER</div>
+  <h2 class="display text-4xl md:text-5xl reveal mb-12" style="max-width:22ch;">The nine.</h2>
+  <div class="space-y-6">
+
+  <article class="card reveal p-8 md:p-10" data-cand="1">
+    <div class="flex flex-wrap items-start justify-between gap-4 mb-5">
+      <div>
+        <div class="eyebrow mb-2" data-slotlabel="1">SLOT 1</div>
+        <h3 class="display text-3xl">Shenley</h3>
+      </div>
+      <div class="text-right shrink-0">
+        <div class="ticker text-2xl">$2,500</div>
+        <div class="eyebrow">EXPECTED, MONTHLY</div>
+      </div>
+    </div>
+    <div class="removable flex flex-wrap gap-2 mb-6">
+      <span class="pill">Jamaica</span>
+      <span class="pill">5 yrs in sales</span>
+      <span class="pill">English: Native</span>
+    </div>
+    <p class="text-lg mb-6" style="max-width:64ch;"><em>The only one on this list who sells to homeowners on the phone all day, every day.</em></p>
+    <div class="eyebrow mb-3">WHAT THEY DO NOW</div>
+    <p class="mb-7" style="color:var(--glacier-muted);max-width:68ch;">Five years of inbound and outbound consumer sales, currently selling internet, cable, wireless and home phone packages to US households. Before that, residential electricity. She converts 8 to 12 new customers a day, runs 30-plus conversations daily, and holds 115 to 130 percent of a weekly quota in a high-volume inbound room.</p>
+    <div class="eyebrow mb-3">WHAT THEY BRING</div>
+    <ul class="space-y-3 mb-7">
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Converts 8-12 new residential customers every day</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Runs 115-130% of weekly quota, consistently, not once</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Lifted bundle attachment more than 20% by selling add-ons consultatively</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Handles 30+ customer conversations a day without dropping quality</span></li>
+    </ul>
+    <div class="grid md:grid-cols-2 gap-4 mb-7">
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">THE ROUGH EDGE</div>
+        <p style="color:var(--glacier-muted);">Her sales are transactional: one call, one close, a fixed price list. Your quote is a custom design with optional line items, which is a slower and more consultative conversation than she has had to run.</p>
+      </div>
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">ASK THEM THIS</div>
+        <p style="color:var(--glacier-muted);">Walk me through the last time a customer said your price was too high. What exactly did you say next?</p>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center gap-3 no-print">
+      <button class="btn btn-ghost video-btn" data-kind="iframe" data-src="https://drive.google.com/file/d/1ubIbTuwq61NSbjVgMTeXzuzVQf-Xk9yF/preview" data-cand="1" aria-expanded="false"><span class="vlabel">▶ Watch intro video</span></button>
+      <button class="btn btn-accent pick-btn" data-cand="1" aria-pressed="false">☆ Interview privately</button>
+      <button class="btn btn-ghost remove-btn" data-cand="1" aria-pressed="false">✕ Remove from event</button>
+    </div>
+    <div class="video-slot no-print" data-slot="1" hidden></div>
+    <div class="mt-6 no-print">
+      <label class="eyebrow block mb-2" for="note-1">YOUR NOTES</label>
+      <textarea id="note-1" data-note="1" rows="3" placeholder="Type during the carousel. Saved on this device only."
+        class="w-full p-4 rounded-2xl" style="background:var(--cream);border:1px solid var(--hairline-strong);font-family:inherit;resize:vertical;"></textarea>
+    </div>
+  </article>
+
+  <article class="card reveal p-8 md:p-10" data-cand="2">
+    <div class="flex flex-wrap items-start justify-between gap-4 mb-5">
+      <div>
+        <div class="eyebrow mb-2" data-slotlabel="2">SLOT 2</div>
+        <h3 class="display text-3xl">Eric</h3>
+      </div>
+      <div class="text-right shrink-0">
+        <div class="ticker text-2xl">$2,500</div>
+        <div class="eyebrow">EXPECTED, MONTHLY</div>
+      </div>
+    </div>
+    <div class="removable flex flex-wrap gap-2 mb-6">
+      <span class="pill">Nicaragua</span>
+      <span class="pill">10+ yrs in sales</span>
+      <span class="pill">English: Professional</span>
+    </div>
+    <p class="text-lg mb-6" style="max-width:64ch;"><em>Ten years of calling homeowners about their roof, their HVAC and their solar panels.</em></p>
+    <div class="eyebrow mb-3">WHAT THEY DO NOW</div>
+    <p class="mb-7" style="color:var(--glacier-muted);max-width:68ch;">A decade of outbound calling at 150 to 300 dials a day. His last three years read like your customer list: roofing and solar inspections, HVAC and plumbing service calls, dental consults. He books the appointment, handles the objection at the door of the call, and moves on.</p>
+    <div class="eyebrow mb-3">WHAT THEY BRING</div>
+    <ul class="space-y-3 mb-7">
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>150-300+ dials a day, sustained over years, not a sprint</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Booked roofing and solar inspections for US homeowners</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Booked HVAC and plumbing jobs, the closest thing to seasonal home services</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Ten years of objection handling at the door of the call</span></li>
+    </ul>
+    <div class="grid md:grid-cols-2 gap-4 mb-7">
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">THE ROUGH EDGE</div>
+        <p style="color:var(--glacier-muted);">He is an appointment setter, not a closer. Ten years of getting people onto a calendar, very little of getting a signature. If this role has to quote and close, that is a real jump.</p>
+      </div>
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">ASK THEM THIS</div>
+        <p style="color:var(--glacier-muted);">You have booked thousands of appointments. How many deals have you actually closed yourself, and what was the biggest one?</p>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center gap-3 no-print">
+      <button class="btn btn-ghost video-btn" data-kind="iframe" data-src="https://drive.google.com/file/d/1FvxRoXvojp3vjrxZRQqIjeZk7DqKposl/preview" data-cand="2" aria-expanded="false"><span class="vlabel">▶ Watch intro video</span></button>
+      <button class="btn btn-accent pick-btn" data-cand="2" aria-pressed="false">☆ Interview privately</button>
+      <button class="btn btn-ghost remove-btn" data-cand="2" aria-pressed="false">✕ Remove from event</button>
+    </div>
+    <div class="video-slot no-print" data-slot="2" hidden></div>
+    <div class="mt-6 no-print">
+      <label class="eyebrow block mb-2" for="note-2">YOUR NOTES</label>
+      <textarea id="note-2" data-note="2" rows="3" placeholder="Type during the carousel. Saved on this device only."
+        class="w-full p-4 rounded-2xl" style="background:var(--cream);border:1px solid var(--hairline-strong);font-family:inherit;resize:vertical;"></textarea>
+    </div>
+  </article>
+
+  <article class="card reveal p-8 md:p-10" data-cand="3">
+    <div class="flex flex-wrap items-start justify-between gap-4 mb-5">
+      <div>
+        <div class="eyebrow mb-2" data-slotlabel="3">SLOT 3</div>
+        <h3 class="display text-3xl">Juan Diego</h3>
+      </div>
+      <div class="text-right shrink-0">
+        <div class="ticker text-2xl">$2,500</div>
+        <div class="eyebrow">EXPECTED, MONTHLY</div>
+      </div>
+    </div>
+    <div class="removable flex flex-wrap gap-2 mb-6">
+      <span class="pill">Nicaragua</span>
+      <span class="pill">5 yrs in sales</span>
+      <span class="pill">English: Bilingual EN/ES</span>
+    </div>
+    <p class="text-lg mb-6" style="max-width:64ch;"><em>Ran a team of SDRs at 24 and still made the calls himself.</em></p>
+    <div class="eyebrow mb-3">WHAT THEY DO NOW</div>
+    <p class="mb-7" style="color:var(--glacier-muted);max-width:68ch;">Started on the phones at a global call centre and lifted sales 30 percent through objection handling. Moved to a B2B agency where he held 95 percent client retention, then to a US staffing firm as an SDR and team lead, mentoring reps while booking meetings and cleaning up the CRM.</p>
+    <div class="eyebrow mb-3">WHAT THEY BRING</div>
+    <ul class="space-y-3 mb-7">
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Lifted sales 30% at a high-volume contact centre</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Held 95% client retention running customer success</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Led and trained a team of SDRs, so he can help you hire the next one</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Fluent in English and Spanish</span></li>
+    </ul>
+    <div class="grid md:grid-cols-2 gap-4 mb-7">
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">THE ROUGH EDGE</div>
+        <p style="color:var(--glacier-muted);">Everything he has sold has been B2B, to businesses, on a scheduled call. Selling a Christmas display to a homeowner in November is a different emotional register and he has not done it.</p>
+      </div>
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">ASK THEM THIS</div>
+        <p style="color:var(--glacier-muted);">This job is selling something nobody needs, to a family, for fun. Why would you be good at that?</p>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center gap-3 no-print">
+      <button class="btn btn-ghost video-btn" data-kind="iframe" data-src="https://drive.google.com/file/d/1FO_AG2vwDin3MhnUnRqqe9yTTY5YxH0X/preview" data-cand="3" aria-expanded="false"><span class="vlabel">▶ Watch intro video</span></button>
+      <button class="btn btn-accent pick-btn" data-cand="3" aria-pressed="false">☆ Interview privately</button>
+      <button class="btn btn-ghost remove-btn" data-cand="3" aria-pressed="false">✕ Remove from event</button>
+    </div>
+    <div class="video-slot no-print" data-slot="3" hidden></div>
+    <div class="mt-6 no-print">
+      <label class="eyebrow block mb-2" for="note-3">YOUR NOTES</label>
+      <textarea id="note-3" data-note="3" rows="3" placeholder="Type during the carousel. Saved on this device only."
+        class="w-full p-4 rounded-2xl" style="background:var(--cream);border:1px solid var(--hairline-strong);font-family:inherit;resize:vertical;"></textarea>
+    </div>
+  </article>
+
+  <article class="card reveal p-8 md:p-10" data-cand="4">
+    <div class="flex flex-wrap items-start justify-between gap-4 mb-5">
+      <div>
+        <div class="eyebrow mb-2" data-slotlabel="4">SLOT 4</div>
+        <h3 class="display text-3xl">Nica May</h3>
+      </div>
+      <div class="text-right shrink-0">
+        <div class="ticker text-2xl">$2,500</div>
+        <div class="eyebrow">EXPECTED, MONTHLY</div>
+      </div>
+    </div>
+    <div class="removable flex flex-wrap gap-2 mb-6">
+      <span class="pill">Philippines</span>
+      <span class="pill">5 yrs in sales</span>
+      <span class="pill">English: Professional</span>
+    </div>
+    <p class="text-lg mb-6" style="max-width:64ch;"><em>Named Caller of the Month more than once, which is a harder thing to fake than a resume line.</em></p>
+    <div class="eyebrow mb-3">WHAT THEY DO NOW</div>
+    <p class="mb-7" style="color:var(--glacier-muted);max-width:68ch;">Five years supporting US customers across lead generation, outbound calling, follow-up and account management. Built and worked lists with Sales Navigator and Apollo, ran outreach and kept the CRM straight. Recognised repeatedly for call quality by employers who measured it.</p>
+    <div class="eyebrow mb-3">WHAT THEY BRING</div>
+    <ul class="space-y-3 mb-7">
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Repeat Caller of the Month, plus Core of the Month twice</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Five years of US-facing calls and written follow-up</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>HubSpot, Apollo, Sales Navigator, JustCall, Shopify, Gorgias</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Strong at the boring part: consistent follow-up on cold leads</span></li>
+    </ul>
+    <div class="grid md:grid-cols-2 gap-4 mb-7">
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">THE ROUGH EDGE</div>
+        <p style="color:var(--glacier-muted);">Her work is split between sales and support, and the support half is larger. She has generated leads more than she has closed them, and this is a quota role.</p>
+      </div>
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">ASK THEM THIS</div>
+        <p style="color:var(--glacier-muted);">Tell me about a month you missed a target. What was the number and what did you change?</p>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center gap-3 no-print">
+      <button class="btn btn-ghost video-btn" data-kind="iframe" data-src="https://drive.google.com/file/d/15XB0n3xIkcSJrbUU24p6PGZ1hgba9iRZ/preview" data-cand="4" aria-expanded="false"><span class="vlabel">▶ Watch intro video</span></button>
+      <button class="btn btn-accent pick-btn" data-cand="4" aria-pressed="false">☆ Interview privately</button>
+      <button class="btn btn-ghost remove-btn" data-cand="4" aria-pressed="false">✕ Remove from event</button>
+    </div>
+    <div class="video-slot no-print" data-slot="4" hidden></div>
+    <div class="mt-6 no-print">
+      <label class="eyebrow block mb-2" for="note-4">YOUR NOTES</label>
+      <textarea id="note-4" data-note="4" rows="3" placeholder="Type during the carousel. Saved on this device only."
+        class="w-full p-4 rounded-2xl" style="background:var(--cream);border:1px solid var(--hairline-strong);font-family:inherit;resize:vertical;"></textarea>
+    </div>
+  </article>
+
+  <article class="card reveal p-8 md:p-10" data-cand="5">
+    <div class="flex flex-wrap items-start justify-between gap-4 mb-5">
+      <div>
+        <div class="eyebrow mb-2" data-slotlabel="5">SLOT 5</div>
+        <h3 class="display text-3xl">Simphiwe</h3>
+      </div>
+      <div class="text-right shrink-0">
+        <div class="ticker text-2xl">$2,500</div>
+        <div class="eyebrow">EXPECTED, MONTHLY</div>
+      </div>
+    </div>
+    <div class="removable flex flex-wrap gap-2 mb-6">
+      <span class="pill">South Africa</span>
+      <span class="pill">16 yrs in sales</span>
+      <span class="pill">English: Fluent</span>
+    </div>
+    <p class="text-lg mb-6" style="max-width:64ch;"><em>Sixteen years selling, six of them remote for American and British companies, as both the setter and the closer.</em></p>
+    <div class="eyebrow mb-3">WHAT THEY DO NOW</div>
+    <p class="mb-7" style="color:var(--glacier-muted);max-width:68ch;">The longest sales career in the room. Sixteen years across call centre, direct sales and corporate consulting, and the last six working remotely for US and UK companies. He currently generates 270 thousand in revenue against a 680 thousand pipeline, and he has closed a quarter of a million in full-cycle deals. Earlier in his career he built and ran a sales and marketing team of more than sixty people.</p>
+    <div class="eyebrow mb-3">WHAT THEY BRING</div>
+    <ul class="space-y-3 mb-7">
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>$270K revenue generated now, against a $680K pipeline</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Closed $250K+ in full-cycle deals as a global sales manager</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Recruited and managed a team of 60+ sales and marketing reps</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Six years selling remotely for US and UK companies</span></li>
+    </ul>
+    <div class="grid md:grid-cols-2 gap-4 mb-7">
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">THE ROUGH EDGE</div>
+        <p style="color:var(--glacier-muted);">Two things. His recent work is B2B outbound with Apollo, Clay and HubSpot, not homeowners on the phone, and his CV shows three jobs running at the same time between 2023 and 2025. That is either concurrent contract work or careless dates, and you want to know which.</p>
+      </div>
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">ASK THEM THIS</div>
+        <p style="color:var(--glacier-muted);">Your CV has three roles overlapping across 2023 and 2024. Walk me through what you were actually doing, month by month.</p>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center gap-3 no-print">
+      <button class="btn btn-ghost video-btn" data-kind="iframe" data-src="https://drive.google.com/file/d/153NepdDl7U3ro0sqjFahI1Ds6NIyjYhk/preview" data-cand="5" aria-expanded="false"><span class="vlabel">▶ Watch intro video</span></button>
+      <button class="btn btn-accent pick-btn" data-cand="5" aria-pressed="false">☆ Interview privately</button>
+      <button class="btn btn-ghost remove-btn" data-cand="5" aria-pressed="false">✕ Remove from event</button>
+    </div>
+    <div class="video-slot no-print" data-slot="5" hidden></div>
+    <div class="mt-6 no-print">
+      <label class="eyebrow block mb-2" for="note-5">YOUR NOTES</label>
+      <textarea id="note-5" data-note="5" rows="3" placeholder="Type during the carousel. Saved on this device only."
+        class="w-full p-4 rounded-2xl" style="background:var(--cream);border:1px solid var(--hairline-strong);font-family:inherit;resize:vertical;"></textarea>
+    </div>
+  </article>
+
+  <article class="card reveal p-8 md:p-10" data-cand="6">
+    <div class="flex flex-wrap items-start justify-between gap-4 mb-5">
+      <div>
+        <div class="eyebrow mb-2" data-slotlabel="6">SLOT 6</div>
+        <h3 class="display text-3xl">Karen</h3>
+      </div>
+      <div class="text-right shrink-0">
+        <div class="ticker text-2xl">$2,500</div>
+        <div class="eyebrow">EXPECTED, MONTHLY</div>
+      </div>
+    </div>
+    <div class="removable flex flex-wrap gap-2 mb-6">
+      <span class="pill">Philippines</span>
+      <span class="pill">5 yrs, support not sales</span>
+      <span class="pill">English: Professional</span>
+    </div>
+    <p class="text-lg mb-6" style="max-width:64ch;"><em>Five years talking to American homeowners about their houses. None of it selling.</em></p>
+    <div class="eyebrow mb-3">WHAT THEY DO NOW</div>
+    <p class="mb-7" style="color:var(--glacier-muted);max-width:68ch;">Her whole career is US residential property management. Three and a half years as an HOA property assistant manager handling homeowner concerns, work orders, vendor coordination and billing. Before that, emergency dispatch: a homeowner calls with a burst pipe, she assesses it and gets a technician moving. She knows American homeowners and she knows how to run a crew schedule. She has never sold anything.</p>
+    <div class="eyebrow mb-3">WHAT THEY BRING</div>
+    <ul class="space-y-3 mb-7">
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Five years of daily contact with US homeowners and HOA boards</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Ran emergency dispatch, matching vendors to urgent jobs</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Work orders, scheduling and vendor follow-through, which is your install calendar</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Handled billing disputes and payment issues without escalating them</span></li>
+    </ul>
+    <div class="grid md:grid-cols-2 gap-4 mb-7">
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">THE ROUGH EDGE</div>
+        <p style="color:var(--glacier-muted);">She is not a salesperson. No quota, no outbound, no closing, anywhere on her resume. Everything she has done is inbound support and coordination. Consider her only if what you actually need is someone to run the schedule behind the sale.</p>
+      </div>
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">ASK THEM THIS</div>
+        <p style="color:var(--glacier-muted);">You have never had a sales target. Tell me the last time you talked someone into spending money they had not planned to spend.</p>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center gap-3 no-print">
+      <button class="btn btn-ghost video-btn" data-kind="iframe" data-src="https://drive.google.com/file/d/1UuAVVTQolAeggYR3ia_gFNEMDLEfDiBh/preview" data-cand="6" aria-expanded="false"><span class="vlabel">▶ Watch intro video</span></button>
+      <button class="btn btn-accent pick-btn" data-cand="6" aria-pressed="false">☆ Interview privately</button>
+      <button class="btn btn-ghost remove-btn" data-cand="6" aria-pressed="false">✕ Remove from event</button>
+    </div>
+    <div class="video-slot no-print" data-slot="6" hidden></div>
+    <div class="mt-6 no-print">
+      <label class="eyebrow block mb-2" for="note-6">YOUR NOTES</label>
+      <textarea id="note-6" data-note="6" rows="3" placeholder="Type during the carousel. Saved on this device only."
+        class="w-full p-4 rounded-2xl" style="background:var(--cream);border:1px solid var(--hairline-strong);font-family:inherit;resize:vertical;"></textarea>
+    </div>
+  </article>
+
+  <article class="card reveal p-8 md:p-10" data-cand="7">
+    <div class="flex flex-wrap items-start justify-between gap-4 mb-5">
+      <div>
+        <div class="eyebrow mb-2" data-slotlabel="7">SLOT 7</div>
+        <h3 class="display text-3xl">Rey</h3>
+      </div>
+      <div class="text-right shrink-0">
+        <div class="ticker text-2xl">$2,500</div>
+        <div class="eyebrow">EXPECTED, MONTHLY</div>
+      </div>
+    </div>
+    <div class="removable flex flex-wrap gap-2 mb-6">
+      <span class="pill">Philippines</span>
+      <span class="pill">15+ yrs in sales</span>
+      <span class="pill">English: Professional</span>
+    </div>
+    <p class="text-lg mb-6" style="max-width:64ch;"><em>Fifteen years on the dialer, and three of them selling energy plans to households line by line.</em></p>
+    <div class="eyebrow mb-3">WHAT THEY DO NOW</div>
+    <p class="mb-7" style="color:var(--glacier-muted);max-width:68ch;">A career phone seller: 180 to 350 dials a day, most recently qualifying cold leads for a US video-security platform. The relevant chapter is three years selling energy plans to Australian households, comparing rates, reading bills back to people and walking them through switching. That is consumer consultative selling with a price sheet.</p>
+    <div class="eyebrow mb-3">WHAT THEY BRING</div>
+    <ul class="space-y-3 mb-7">
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>180-350 dials a day for fifteen years straight</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Three years of consumer rate comparisons and bill walkthroughs</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Ran cold and warm pipelines for US and Australian companies</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Deep CRM range: Salesforce, HubSpot, Zoho, Pipedrive and more</span></li>
+    </ul>
+    <div class="grid md:grid-cols-2 gap-4 mb-7">
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">THE ROUGH EDGE</div>
+        <p style="color:var(--glacier-muted);">His resume names an incentive-scheme dispute as the reason for leaving a job, which is worth asking about directly. His recent work is also qualifying cold leads rather than closing them.</p>
+      </div>
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">ASK THEM THIS</div>
+        <p style="color:var(--glacier-muted);">You left one role over a commission dispute. Tell me what happened, and tell me your side without making anyone the villain.</p>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center gap-3 no-print">
+      <button class="btn btn-ghost video-btn" data-kind="video" data-src="https://candidate-video.com/uploads/c2bbf996-0abc-4aee-9b0d-9d10bed3c607" data-cand="7" aria-expanded="false"><span class="vlabel">▶ Watch intro video</span></button>
+      <button class="btn btn-accent pick-btn" data-cand="7" aria-pressed="false">☆ Interview privately</button>
+      <button class="btn btn-ghost remove-btn" data-cand="7" aria-pressed="false">✕ Remove from event</button>
+    </div>
+    <div class="video-slot no-print" data-slot="7" hidden></div>
+    <div class="mt-6 no-print">
+      <label class="eyebrow block mb-2" for="note-7">YOUR NOTES</label>
+      <textarea id="note-7" data-note="7" rows="3" placeholder="Type during the carousel. Saved on this device only."
+        class="w-full p-4 rounded-2xl" style="background:var(--cream);border:1px solid var(--hairline-strong);font-family:inherit;resize:vertical;"></textarea>
+    </div>
+  </article>
+
+  <article class="card reveal p-8 md:p-10" data-cand="8">
+    <div class="flex flex-wrap items-start justify-between gap-4 mb-5">
+      <div>
+        <div class="eyebrow mb-2" data-slotlabel="8">SLOT 8</div>
+        <h3 class="display text-3xl">Furqan</h3>
+      </div>
+      <div class="text-right shrink-0">
+        <div class="ticker text-2xl">$2,500</div>
+        <div class="eyebrow">EXPECTED, MONTHLY</div>
+      </div>
+    </div>
+    <div class="removable flex flex-wrap gap-2 mb-6">
+      <span class="pill">Pakistan</span>
+      <span class="pill">6 yrs in sales</span>
+      <span class="pill">English: Fluent</span>
+    </div>
+    <p class="text-lg mb-6" style="max-width:64ch;"><em>Hit 321 percent of quota as an SMB account executive, then ran a twelve-person team.</em></p>
+    <div class="eyebrow mb-3">WHAT THEY DO NOW</div>
+    <p class="mb-7" style="color:var(--glacier-muted);max-width:68ch;">The strongest raw sales numbers in the room. Six years at US SaaS companies: closed SMB deals at 321 percent of quota one year and 137 percent the next, then moved into leadership, managing SDR teams of six and twelve, generating 2.2 million in pipeline and 920 thousand in closed-won.</p>
+    <div class="eyebrow mb-3">WHAT THEY BRING</div>
+    <ul class="space-y-3 mb-7">
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>321% of quota in 2022, 137% the following year</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>$2.2M pipeline and $920K closed-won as a manager</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Built onboarding and coaching programmes that cut ramp time</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Has sat on both sides: individual quota and team leadership</span></li>
+    </ul>
+    <div class="grid md:grid-cols-2 gap-4 mb-7">
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">THE ROUGH EDGE</div>
+        <p style="color:var(--glacier-muted);">He has spent two years managing rather than selling. Going back to carrying a bag alone is a step people often regret, and this role has no team under it.</p>
+      </div>
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">ASK THEM THIS</div>
+        <p style="color:var(--glacier-muted);">You have been managing for two years. This job has no team under it. Why do you want to go backwards, and what happens in month four when you miss it?</p>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center gap-3 no-print">
+      <button class="btn btn-ghost video-btn" data-kind="iframe" data-src="https://www.loom.com/embed/d0ab919045c1472b8f786a7ac9e06525" data-cand="8" aria-expanded="false"><span class="vlabel">▶ Watch intro video</span></button>
+      <button class="btn btn-accent pick-btn" data-cand="8" aria-pressed="false">☆ Interview privately</button>
+      <button class="btn btn-ghost remove-btn" data-cand="8" aria-pressed="false">✕ Remove from event</button>
+    </div>
+    <div class="video-slot no-print" data-slot="8" hidden></div>
+    <div class="mt-6 no-print">
+      <label class="eyebrow block mb-2" for="note-8">YOUR NOTES</label>
+      <textarea id="note-8" data-note="8" rows="3" placeholder="Type during the carousel. Saved on this device only."
+        class="w-full p-4 rounded-2xl" style="background:var(--cream);border:1px solid var(--hairline-strong);font-family:inherit;resize:vertical;"></textarea>
+    </div>
+  </article>
+
+  <article class="card reveal p-8 md:p-10" data-cand="9">
+    <div class="flex flex-wrap items-start justify-between gap-4 mb-5">
+      <div>
+        <div class="eyebrow mb-2" data-slotlabel="9">SLOT 9</div>
+        <h3 class="display text-3xl">Tiago</h3>
+      </div>
+      <div class="text-right shrink-0">
+        <div class="ticker text-2xl">$2,500</div>
+        <div class="eyebrow">EXPECTED, MONTHLY</div>
+      </div>
+    </div>
+    <div class="removable flex flex-wrap gap-2 mb-6">
+      <span class="pill">Brazil</span>
+      <span class="pill">7 yrs in sales</span>
+      <span class="pill">English: Fluent</span>
+    </div>
+    <p class="text-lg mb-6" style="max-width:64ch;"><em>A mechanical engineer who taught himself to sell, then built the outbound engine from scratch.</em></p>
+    <div class="eyebrow mb-3">WHAT THEY DO NOW</div>
+    <p class="mb-7" style="color:var(--glacier-muted);max-width:68ch;">Seven years of business development for a US industrial-software company, covering both LATAM and the United States. Generated 1.2 million in qualified pipeline and influenced 450 thousand in ARR in his last twelve months, at 150-plus outbound touches a week and a 5.5 percent cold-call-to-meeting rate, twenty percent above his team.</p>
+    <div class="eyebrow mb-3">WHAT THEY BRING</div>
+    <ul class="space-y-3 mb-7">
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>$1.2M qualified pipeline, $450K ARR influenced in 12 months</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>5.5% cold-call-to-meeting rate, 20% above team benchmark</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Built multi-channel outbound sequences from nothing, using AI tools</span></li>
+      <li class="flex gap-3"><span style="color:var(--dandelion);">✓</span><span>Fluent English, Spanish and Portuguese</span></li>
+    </ul>
+    <div class="grid md:grid-cols-2 gap-4 mb-7">
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">THE ROUGH EDGE</div>
+        <p style="color:var(--glacier-muted);">All of it is B2B software, sold to buying committees over long cycles. Your sale is one homeowner, one call, one season, and emotion does most of the work. He has never sold anything like it.</p>
+      </div>
+      <div class="p-6" style="background:var(--cream-deep);border-radius:18px;">
+        <div class="eyebrow mb-2">ASK THEM THIS</div>
+        <p style="color:var(--glacier-muted);">Your deals took months and had four people on the buying side. Mine take one call with a mum who wants her house to look nice. Convince me that transfers.</p>
+      </div>
+    </div>
+    <div class="flex flex-wrap items-center gap-3 no-print">
+      <button class="btn btn-ghost video-btn" data-kind="iframe" data-src="https://drive.google.com/file/d/1Up3yYcTH6MCiiJ15Wzzi92IifNLr0RtG/preview" data-cand="9" aria-expanded="false"><span class="vlabel">▶ Watch intro video</span></button>
+      <button class="btn btn-accent pick-btn" data-cand="9" aria-pressed="false">☆ Interview privately</button>
+      <button class="btn btn-ghost remove-btn" data-cand="9" aria-pressed="false">✕ Remove from event</button>
+    </div>
+    <div class="video-slot no-print" data-slot="9" hidden></div>
+    <div class="mt-6 no-print">
+      <label class="eyebrow block mb-2" for="note-9">YOUR NOTES</label>
+      <textarea id="note-9" data-note="9" rows="3" placeholder="Type during the carousel. Saved on this device only."
+        class="w-full p-4 rounded-2xl" style="background:var(--cream);border:1px solid var(--hairline-strong);font-family:inherit;resize:vertical;"></textarea>
+    </div>
+  </article>
+
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-6 py-20 no-print">
+  <div class="card reveal p-8 md:p-12">
+    <div class="eyebrow mb-6">WHO YOU PICKED</div>
+    <h2 class="display text-3xl md:text-4xl mb-4" style="max-width:24ch;">Up to three, for a private 40-minute room.</h2>
+    <p class="mb-8" style="color:var(--glacier-muted);max-width:62ch;">
+      Whoever you mark for a private interview shows up here. After the main stage, Kathe asks you for your names.
+      Read them off this list.
+    </p>
+    <p id="pick-note" class="mb-4 text-sm" style="color:#B4441F;"></p>
+    <div id="pick-tray" class="flex flex-wrap gap-3 mb-10">
+      <span style="color:var(--glacier-muted);">Nobody picked yet.</span>
+    </div>
+    <div class="eyebrow mb-4">REMOVED FROM THE EVENT</div>
+    <div id="removed-tray" class="flex flex-wrap gap-3 mb-8">
+      <span style="color:var(--glacier-muted);">Nobody removed. All nine are on stage.</span>
+    </div>
+    <div class="flex flex-wrap gap-3 mb-5">
+      <button id="send-btn" class="btn btn-primary">Confirm my choices →</button>
+      <button id="copy-btn" class="btn btn-ghost">Copy instead</button>
+    </div>
+    <p id="send-status" class="text-sm mb-3" style="color:var(--glacier-muted);">
+      Your choices are saved on this device as you click. Nothing reaches us until you press Send.
+    </p>
+  </div>
+</section>
+
+<section style="background:var(--glacier);color:var(--cream);">
+  <div class="max-w-6xl mx-auto px-6 py-20 md:py-24">
+    <div class="eyebrow mb-6" style="color:rgba(245,242,237,0.6);">QUESTIONS BEFORE THE EVENT</div>
+    <h2 class="display text-3xl md:text-5xl mb-6" style="max-width:20ch;">Something look off? Tell me now, not on the day.</h2>
+    <p class="text-lg mb-8" style="color:rgba(245,242,237,0.7);max-width:56ch;">
+      If a profile misses the mark we can still swap them out. We keep backups warm until the morning of.
+    </p>
+    <a href="mailto:katherine.r@getsagan.com" class="btn btn-accent">Email Kathe →</a>
+  </div>
+</section>
+
+<footer class="max-w-6xl mx-auto px-6 py-12 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+  <span class="display text-lg">Sagan</span>
+  <span class="text-sm" style="color:var(--glacier-muted);">Prepared for Christmas Champs · Private link, please don't forward</span>
+</footer>
+
+<script>
+(function(){
+  var KEY = 'lhe-champs-holidaysales-';
+  var SEATS = 7, MAX_PICKS = 3;
+  // Notification endpoint. Accepts POST {event, member, picks, removed, staying, notes}.
+  // Empty string = notifications off, buttons fall back to email only.
+  var ENDPOINT = '';
+  var names = {}, arts = {};
+  document.querySelectorAll('article[data-cand]').forEach(function(el){
+    names[el.dataset.cand] = el.querySelector('.display').textContent.trim();
+    arts[el.dataset.cand] = el;
+  });
+  function sget(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }
+  function sset(k,v){ try { localStorage.setItem(k,v); } catch(e){} }
+  function isRemoved(c){ return sget(KEY+'removed-'+c) === '1'; }
+  function isPicked(c){ return sget(KEY+'picked-'+c) === '1'; }
+  function pickedList(){ return Object.keys(arts).filter(isPicked); }
+
+  document.querySelectorAll('textarea[data-note]').forEach(function(t){
+    var k = KEY + 'note-' + t.dataset.note;
+    var v = sget(k); if (v) t.value = v;
+    t.addEventListener('input', function(){ sset(k, t.value); });
+  });
+
+  function render(){
+    var active = Object.keys(arts).sort(function(a,b){return a-b;}).filter(function(c){ return !isRemoved(c); });
+    var picks = pickedList();
+
+    active.forEach(function(c,i){
+      var lab = arts[c].querySelector('[data-slotlabel]');
+      if (lab) lab.textContent = 'SLOT ' + (i+1);
+    });
+
+    Object.keys(arts).forEach(function(c){
+      var removed = isRemoved(c);
+      arts[c].classList.toggle('removed', removed);
+      var lab = arts[c].querySelector('[data-slotlabel]');
+      if (removed && lab) lab.textContent = 'REMOVED FROM THE EVENT';
+      var rb = arts[c].querySelector('.remove-btn');
+      if (rb){
+        rb.textContent = removed ? '\u21BA Put back on stage' : '\u2715 Remove from event';
+        rb.setAttribute('aria-pressed', removed ? 'true' : 'false');
+      }
+      var pb = arts[c].querySelector('.pick-btn');
+      if (pb){
+        var on = isPicked(c) && !removed;
+        pb.textContent = on ? '\u2605 Private interview' : '\u2606 Interview privately';
+        pb.classList.toggle('btn-accent', on);
+        pb.classList.toggle('btn-ghost', !on);
+        pb.style.display = removed ? 'none' : '';
+      }
+    });
+
+    var over = active.length - SEATS;
+    document.getElementById('stage-count').textContent = active.length + ' ON STAGE';
+    var cs = document.getElementById('clock-status');
+    cs.textContent = over > 0 ? '· ' + over + ' TOO MANY' : '· FITS';
+    cs.style.color = over > 0 ? '#B4441F' : 'var(--glacier-muted)';
+
+    var pt = document.getElementById('pick-tray');
+    pt.innerHTML = picks.length
+      ? picks.map(function(c){ return '<span class="pill" style="background:var(--dandelion);color:var(--glacier);border-color:var(--dandelion);font-weight:600;">\u2605 ' + names[c] + '</span>'; }).join('')
+      : '<span style="color:var(--glacier-muted);">Nobody picked yet.</span>';
+
+    var rem = Object.keys(arts).filter(isRemoved);
+    var rt = document.getElementById('removed-tray');
+    rt.innerHTML = rem.length
+      ? rem.map(function(c){ return '<span class="pill">\u2715 ' + names[c] + '</span>'; }).join('')
+      : '<span style="color:var(--glacier-muted);">Nobody removed. All nine are on stage.</span>';
+
+    var note = document.getElementById('pick-note');
+    note.textContent = picks.length >= MAX_PICKS ? 'Three is the maximum. Remove one before adding another.' : '';
+  }
+
+  document.querySelectorAll('.remove-btn').forEach(function(b){
+    b.addEventListener('click', function(){
+      var c = b.dataset.cand, now = !isRemoved(c);
+      sset(KEY+'removed-'+c, now ? '1' : '0');
+      if (now) sset(KEY+'picked-'+c, '0');
+      render();
+    });
+  });
+  document.querySelectorAll('.pick-btn').forEach(function(b){
+    b.addEventListener('click', function(){
+      var c = b.dataset.cand;
+      if (isRemoved(c)) return;
+      if (!isPicked(c) && pickedList().length >= MAX_PICKS){ render(); return; }
+      sset(KEY+'picked-'+c, isPicked(c) ? '0' : '1');
+      render();
+    });
+  });
+
+  document.querySelectorAll('.video-btn').forEach(function(b){
+    var slot = document.querySelector('.video-slot[data-slot="' + b.dataset.cand + '"]');
+    if (!slot) return;
+    b.addEventListener('click', function(){
+      if (b.getAttribute('aria-expanded') === 'true') {
+        slot.hidden = true; slot.innerHTML = '';
+        b.setAttribute('aria-expanded','false');
+        b.querySelector('.vlabel').textContent = '\u25B6 Watch intro video';
+        return;
+      }
+      slot.innerHTML = b.dataset.kind === 'video'
+        ? '<div class="video-frame"><video controls preload="metadata" playsinline src="' + b.dataset.src + '"></video></div>'
+        : '<div class="video-frame"><iframe src="' + b.dataset.src + '" allow="autoplay; fullscreen" allowfullscreen referrerpolicy="no-referrer"></iframe></div>';
+      slot.hidden = false;
+      b.setAttribute('aria-expanded','true');
+      b.querySelector('.vlabel').textContent = '\u2715 Close video';
+    });
+  });
+
+  function summary(){
+    var order = Object.keys(arts).sort(function(a,b){return a-b;});
+    var picks = order.filter(function(c){ return isPicked(c) && !isRemoved(c); });
+    var rem   = order.filter(isRemoved);
+    var stay  = order.filter(function(c){ return !isRemoved(c); });
+    var L = [];
+    L.push('Christmas Champs -- Holiday Lighting Sales Specialist');
+    L.push('');
+    L.push('INTERVIEW PRIVATELY (' + picks.length + '):');
+    L.push(picks.length ? picks.map(function(c){ return '  - ' + names[c]; }).join('\n') : '  (none yet)');
+    L.push('');
+    L.push('REMOVE FROM THE EVENT (' + rem.length + '):');
+    L.push(rem.length ? rem.map(function(c){ return '  - ' + names[c]; }).join('\n') : '  (none)');
+    L.push('');
+    L.push('STAYING ON THE MAIN STAGE (' + stay.length + '):');
+    L.push(stay.map(function(c){ return '  - ' + names[c]; }).join('\n'));
+    var notes = order.map(function(c){
+      var t = sget(KEY + 'note-' + c);
+      return (t && t.trim()) ? '  ' + names[c] + ': ' + t.trim() : null;
+    }).filter(Boolean);
+    if (notes.length){ L.push(''); L.push('MY NOTES:'); L.push(notes.join('\n')); }
+    return L.join('\n');
+  }
+  function status(msg){
+    var el = document.getElementById('send-status');
+    el.textContent = msg;
+    el.style.color = 'var(--glacier)';
+    setTimeout(function(){
+      el.textContent = 'Your choices are saved on this device as you click. Nothing reaches us until you press Send.';
+      el.style.color = 'var(--glacier-muted)';
+    }, 6000);
+  }
+  function payload(){
+    var order = Object.keys(arts).sort(function(a,b){return a-b;});
+    var pick = function(f){ return order.filter(f).map(function(c){ return names[c]; }); };
+    var notes = {};
+    order.forEach(function(c){
+      var t = sget(KEY + 'note-' + c);
+      if (t && t.trim()) notes[names[c]] = t.trim();
+    });
+    return {
+      event: 'Christmas Champs - Holiday Lighting Sales Specialist',
+      member: 'Kesler Pollard',
+      picks:   pick(function(c){ return isPicked(c) && !isRemoved(c); }),
+      removed: pick(isRemoved),
+      staying: pick(function(c){ return !isRemoved(c); }),
+      notes:   notes,
+      text:    summary()
+    };
+  }
+  function mailFallback(){
+    window.location.href = 'mailto:katherine.r@getsagan.com'
+      + '?subject=' + encodeURIComponent('Christmas Champs event -- my picks')
+      + '&body=' + encodeURIComponent(summary());
+  }
+  document.getElementById('send-btn').addEventListener('click', function(){
+    var btn = this;
+    if (!ENDPOINT){ mailFallback(); status('Opening your email. Press send in there and it reaches Kathe.'); return; }
+    btn.disabled = true; btn.textContent = 'Sending...';
+    fetch(ENDPOINT, {
+      method: 'POST',
+      headers: {'Content-Type': 'text/plain;charset=UTF-8'},  // simple request, no CORS preflight
+      body: JSON.stringify(payload())
+    }).then(function(){
+      btn.textContent = 'Sent to Kathe';
+      status('Sent. Kathe has your choices. Click again any time you change your mind.');
+      setTimeout(function(){ btn.disabled = false; btn.textContent = 'Confirm my choices \u2192'; }, 4000);
+    }).catch(function(){
+      btn.disabled = false; btn.textContent = 'Confirm my choices \u2192';
+      mailFallback();
+      status('Could not reach us, so we opened your email instead. Press send in there.');
+    });
+  });
+  document.getElementById('copy-btn').addEventListener('click', function(){
+    var text = summary();
+    function ok(){ status('Copied. Paste it to Kathe in an email or WhatsApp.'); }
+    if (navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(ok, fallback);
+    } else { fallback(); }
+    function fallback(){
+      var ta = document.createElement('textarea');
+      ta.value = text; ta.style.position='fixed'; ta.style.opacity='0';
+      document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); ok(); }
+      catch(e){ status('Could not copy. Use the Send button instead.'); }
+      document.body.removeChild(ta);
+    }
+  });
+
+  render();
+})();
+</script>
+<script>
+  const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting && e.target.classList.add('in')), {threshold:0.08});
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  // Highlight any template token left unfilled
+  (function(){
+    const rx = /\{\{[A-Z0-9_]+\}\}/g;
+    const walk = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    const hits = [];
+    let n; while (n = walk.nextNode()) { if (rx.test(n.nodeValue)) hits.push(n); rx.lastIndex = 0; }
+    hits.forEach(node => {
+      const span = document.createElement('span');
+      span.innerHTML = node.nodeValue.replace(rx, m => '<span class="tok">' + m + '</span>');
+      node.parentNode.replaceChild(span, node);
+    });
+  })();
+</script>
+</body>
+</html>
