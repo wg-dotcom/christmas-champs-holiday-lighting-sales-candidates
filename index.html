@@ -624,9 +624,9 @@
 (function(){
   var KEY = 'lhe-champs-holidaysales-';
   var SEATS = 7, MAX_PICKS = 3;
-  // Notification endpoint. Accepts POST {event, member, picks, removed, staying, notes}.
-  // Empty string = notifications off, buttons fall back to email only.
-  var ENDPOINT = '';
+  // Google Apps Script /exec URL. See notify-appscript/README.md.
+  // Empty string = notifications off, the button falls back to the member's mail client.
+  var ENDPOINT = 'https://script.google.com/macros/s/AKfycbx_veJvs1UvoYFnjwAn8DnCLAh8UBdGxxOnI2MGks-Jthvy41bReWr9ELJAyh83A8s/exec';
   var names = {}, arts = {};
   document.querySelectorAll('article[data-cand]').forEach(function(el){
     names[el.dataset.cand] = el.querySelector('.display').textContent.trim();
@@ -790,13 +790,16 @@
     var btn = this;
     if (!ENDPOINT){ mailFallback(); status('Opening your email. Press send in there and it reaches Kathe.'); return; }
     btn.disabled = true; btn.textContent = 'Sending...';
+    // no-cors + text/plain keeps this a simple request. Apps Script cannot send CORS
+    // headers, so the response is opaque: delivery succeeds, we just cannot read it back.
     fetch(ENDPOINT, {
       method: 'POST',
-      headers: {'Content-Type': 'text/plain;charset=UTF-8'},  // simple request, no CORS preflight
+      mode: 'no-cors',
+      headers: {'Content-Type': 'text/plain;charset=UTF-8'},
       body: JSON.stringify(payload())
     }).then(function(){
       btn.textContent = 'Sent to Kathe';
-      status('Sent. Kathe has your choices. Click again any time you change your mind.');
+      status('Sent to Kathe. Click again any time you change your mind.');
       setTimeout(function(){ btn.disabled = false; btn.textContent = 'Confirm my choices \u2192'; }, 4000);
     }).catch(function(){
       btn.disabled = false; btn.textContent = 'Confirm my choices \u2192';
