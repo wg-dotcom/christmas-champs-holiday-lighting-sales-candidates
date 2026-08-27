@@ -57,7 +57,6 @@
     </a>
     <div class="flex items-center gap-3">
       <span class="eyebrow hidden md:inline" id="stage-count">9 ON STAGE</span>
-      <span class="eyebrow hidden lg:inline" id="clock-status">·</span>
       <button onclick="window.print()" class="btn btn-ghost" style="padding:9px 18px;font-size:14px;">Print</button>
     </div>
   </div>
@@ -623,7 +622,7 @@
 <script>
 (function(){
   var KEY = 'lhe-champs-holidaysales-';
-  var SEATS = 7, MAX_PICKS = 3;
+  var MAX_PICKS = 3;
   // Google Apps Script /exec URL. See notify-appscript/README.md.
   // Empty string = notifications off, the button falls back to the member's mail client.
   var ENDPOINT = 'https://script.google.com/macros/s/AKfycbx_veJvs1UvoYFnjwAn8DnCLAh8UBdGxxOnI2MGks-Jthvy41bReWr9ELJAyh83A8s/exec';
@@ -673,11 +672,7 @@
       }
     });
 
-    var over = active.length - SEATS;
     document.getElementById('stage-count').textContent = active.length + ' ON STAGE';
-    var cs = document.getElementById('clock-status');
-    cs.textContent = over > 0 ? '· ' + over + ' TOO MANY' : '· FITS';
-    cs.style.color = over > 0 ? '#B4441F' : 'var(--glacier-muted)';
 
     var pt = document.getElementById('pick-tray');
     pt.innerHTML = picks.length
@@ -763,6 +758,15 @@
       el.style.color = 'var(--glacier-muted)';
     }, 6000);
   }
+  function stateKey(){
+    var order = Object.keys(arts).sort(function(a,b){return a-b;});
+    return order.map(function(c){
+      return c + (isRemoved(c) ? 'R' : '') + (isPicked(c) ? 'P' : '');
+    }).join('|');
+  }
+  function hasChoices(){
+    return Object.keys(arts).some(function(c){ return isRemoved(c) || isPicked(c); });
+  }
   function payload(){
     var order = Object.keys(arts).sort(function(a,b){return a-b;});
     var pick = function(f){ return order.filter(f).map(function(c){ return names[c]; }); };
@@ -781,6 +785,24 @@
       text:    summary()
     };
   }
+  // Tell Kathe where he got to, even if he never presses Confirm.
+  // Fires once on load if he picked in an earlier visit, and again when he leaves.
+  function autoSend(useBeacon){
+    if (!ENDPOINT || !hasChoices()) return;
+    var key = stateKey();
+    if (sget(KEY + 'sent') === key) return;
+    var body = JSON.stringify(Object.assign(payload(), { status: 'in_progress' }));
+    try {
+      if (useBeacon && navigator.sendBeacon){
+        var blob = new Blob([body], { type: 'text/plain;charset=UTF-8' });
+        if (!navigator.sendBeacon(ENDPOINT, blob)) return;
+      } else {
+        fetch(ENDPOINT, { method:'POST', mode:'no-cors', keepalive:true,
+                          headers:{'Content-Type':'text/plain;charset=UTF-8'}, body: body });
+      }
+      sset(KEY + 'sent', key);
+    } catch(e){}
+  }
   function mailFallback(){
     window.location.href = 'mailto:katherine.r@getsagan.com'
       + '?subject=' + encodeURIComponent('Christmas Champs event -- my picks')
@@ -796,8 +818,9 @@
       method: 'POST',
       mode: 'no-cors',
       headers: {'Content-Type': 'text/plain;charset=UTF-8'},
-      body: JSON.stringify(payload())
+      body: JSON.stringify(Object.assign(payload(), { status: 'confirmed' }))
     }).then(function(){
+      sset(KEY + 'sent', stateKey());
       btn.textContent = 'Sent to Kathe';
       status('Sent to Kathe. Click again any time you change your mind.');
       setTimeout(function(){ btn.disabled = false; btn.textContent = 'Confirm my choices \u2192'; }, 4000);
@@ -824,6 +847,14 @@
   });
 
   render();
+
+  // If he made choices in an earlier visit and never confirmed, report them now.
+  autoSend(false);
+  // And again whenever he closes the tab or switches away.
+  window.addEventListener('pagehide', function(){ autoSend(true); });
+  document.addEventListener('visibilitychange', function(){
+    if (document.visibilityState === 'hidden') autoSend(true);
+  });
 })();
 </script>
 <script>
